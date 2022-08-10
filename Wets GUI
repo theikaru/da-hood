@@ -1,0 +1,452 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local StartUp = Instance.new("Frame")
+local Credits = Instance.new("TextLabel")
+local Info = Instance.new("TextLabel")
+local Main = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Other = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Settings = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Exit = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local MainMenu = Instance.new("Frame")
+local WalkSpeed = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
+local Exit_2 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local MiscGui = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+local Exit_3 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
+local SettingGui = Instance.new("Frame")
+local Text_2 = Instance.new("TextLabel")
+local Exit_4 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
+local OtherGui = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local Info_2 = Instance.new("TextLabel")
+local Target = Instance.new("TextLabel")
+local Soon = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+StartUp.Name = "Start Up"
+StartUp.Parent = ScreenGui
+StartUp.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+StartUp.BackgroundTransparency = 0.050
+StartUp.Position = UDim2.new(0.291232884, 0, 0.237330034, 0)
+StartUp.Size = UDim2.new(0, 413, 0, 425)
+Main.Active = true
+Main.Draggable = true
+
+Credits.Name = "Credits"
+Credits.Parent = StartUp
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.245211333, 0, 0.802352965, 0)
+Credits.Size = UDim2.new(0, 200, 0, 50)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Made By fenji#7996 , Wet#0404"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 25.000
+
+Info.Name = "Info"
+Info.Parent = StartUp
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.Position = UDim2.new(0.245211333, 0, 0.882352948, 0)
+Info.Size = UDim2.new(0, 200, 0, 50)
+Info.Font = Enum.Font.SourceSans
+Info.Text = "Might Get Updates lol"
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextSize = 25.000
+
+Main.Name = "Main"
+Main.Parent = StartUp
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 0.700
+Main.Position = UDim2.new(0.0173267331, 0, 0.141176477, 0)
+Main.Size = UDim2.new(0, 200, 0, 50)
+Main.Font = Enum.Font.SourceSans
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextScaled = true
+Main.TextSize = 14.000
+Main.TextWrapped = true
+
+UICorner.Parent = Main
+
+Misc.Name = "Misc"
+Misc.Parent = StartUp
+Misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Misc.BackgroundTransparency = 0.700
+Misc.Position = UDim2.new(0.0173267331, 0, 0.496470571, 0)
+Misc.Size = UDim2.new(0, 200, 0, 50)
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextScaled = true
+Misc.TextSize = 14.000
+Misc.TextWrapped = true
+
+UICorner_2.Parent = Misc
+
+Other.Name = "Other"
+Other.Parent = StartUp
+Other.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Other.BackgroundTransparency = 0.700
+Other.Position = UDim2.new(0.513694763, 0, 0.141176477, 0)
+Other.Size = UDim2.new(0, 200, 0, 50)
+Other.Font = Enum.Font.SourceSans
+Other.Text = "Other"
+Other.TextColor3 = Color3.fromRGB(255, 255, 255)
+Other.TextScaled = true
+Other.TextSize = 14.000
+Other.TextWrapped = true
+
+UICorner_3.Parent = Other
+
+Settings.Name = "Settings"
+Settings.Parent = StartUp
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 0.700
+Settings.Position = UDim2.new(0.513694763, 0, 0.496470571, 0)
+Settings.Size = UDim2.new(0, 200, 0, 50)
+Settings.Font = Enum.Font.SourceSans
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextScaled = true
+Settings.TextSize = 14.000
+Settings.TextWrapped = true
+
+UICorner_4.Parent = Settings
+
+Title.Name = "Title"
+Title.Parent = StartUp
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.257317871, 0, 0, 0)
+Title.Size = UDim2.new(0, 200, 0, 50)
+Title.Font = Enum.Font.Arcade
+Title.Text = "Wets GUI"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 35.000
+
+UICorner_5.Parent = StartUp
+
+TextLabel.Parent = StartUp
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.256658584, 0, 0.324705869, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Dosent Work Yet"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 41.000
+
+Exit.Name = "Exit"
+Exit.Parent = StartUp
+Exit.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit.Position = UDim2.new(0.883720934, 0, 0, 0)
+Exit.Size = UDim2.new(0, 45, 0, 35)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextSize = 39.000
+
+UICorner_6.Parent = Exit
+
+MainMenu.Name = "MainMenu"
+MainMenu.Parent = ScreenGui
+MainMenu.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+MainMenu.BackgroundTransparency = 0.050
+MainMenu.Position = UDim2.new(0.674757302, 0, 0.237330034, 0)
+MainMenu.Size = UDim2.new(0, 387, 0, 425)
+MainMenu.Visible = false
+
+WalkSpeed.Name = "WalkSpeed"
+WalkSpeed.Parent = MainMenu
+WalkSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeed.BackgroundTransparency = 0.500
+WalkSpeed.Position = UDim2.new(0.0310077518, 0, 0.141176477, 0)
+WalkSpeed.Size = UDim2.new(0, 209, 0, 50)
+WalkSpeed.Font = Enum.Font.SourceSans
+WalkSpeed.Text = "Walk Speed | Toggle"
+WalkSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeed.TextSize = 29.000
+
+UICorner_7.Parent = WalkSpeed
+
+Title_2.Name = "Title"
+Title_2.Parent = MainMenu
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.257317871, 0, 0, 0)
+Title_2.Size = UDim2.new(0, 200, 0, 50)
+Title_2.Font = Enum.Font.Arcade
+Title_2.Text = "Wets GUI"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 35.000
+
+Fly.Name = "Fly"
+Fly.Parent = MainMenu
+Fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fly.BackgroundTransparency = 0.500
+Fly.Position = UDim2.new(0.59173125, 0, 0.141176477, 0)
+Fly.Size = UDim2.new(0, 150, 0, 50)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Flight | X"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextSize = 29.000
+
+UICorner_8.Parent = Fly
+
+TextButton.Parent = MainMenu
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 0.500
+TextButton.Position = UDim2.new(0.0310077518, 0, 0.280000001, 0)
+TextButton.Size = UDim2.new(0, 209, 0, 56)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Silent Aim"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 43.000
+
+UICorner_9.Parent = TextButton
+
+TextButton_2.Parent = MainMenu
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 0.500
+TextButton_2.Position = UDim2.new(0.59173125, 0, 0.280000001, 0)
+TextButton_2.Size = UDim2.new(0, 150, 0, 56)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Lock"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 43.000
+
+UICorner_10.Parent = TextButton_2
+
+UICorner_11.Parent = MainMenu
+
+Exit_2.Name = "Exit"
+Exit_2.Parent = MainMenu
+Exit_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit_2.Position = UDim2.new(0.883720934, 0, 0, 0)
+Exit_2.Size = UDim2.new(0, 45, 0, 35)
+Exit_2.Font = Enum.Font.SourceSans
+Exit_2.Text = "X"
+Exit_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit_2.TextSize = 39.000
+
+UICorner_12.Parent = Exit_2
+
+MiscGui.Name = "MiscGui"
+MiscGui.Parent = ScreenGui
+MiscGui.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+MiscGui.BackgroundTransparency = 0.100
+MiscGui.Position = UDim2.new(0.116873629, 0, 0.237330034, 0)
+MiscGui.Size = UDim2.new(0, 184, 0, 261)
+MiscGui.Visible = false
+
+Text.Name = "Text"
+Text.Parent = MiscGui
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.Size = UDim2.new(0, 184, 0, 50)
+Text.Font = Enum.Font.SourceSans
+Text.Text = "Nothing Here Yet"
+Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text.TextSize = 25.000
+
+Exit_3.Name = "Exit"
+Exit_3.Parent = MiscGui
+Exit_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit_3.Position = UDim2.new(0.646739125, 0, 0.835249066, 0)
+Exit_3.Size = UDim2.new(0, 61, 0, 35)
+Exit_3.Font = Enum.Font.SourceSans
+Exit_3.Text = "X"
+Exit_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit_3.TextSize = 39.000
+
+UICorner_13.Parent = Exit_3
+
+UICorner_14.Parent = MiscGui
+
+SettingGui.Name = "SettingGui"
+SettingGui.Parent = ScreenGui
+SettingGui.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+SettingGui.BackgroundTransparency = 0.100
+SettingGui.Position = UDim2.new(0.116873629, 0, 0.237330034, 0)
+SettingGui.Size = UDim2.new(0, 184, 0, 261)
+SettingGui.Visible = false
+
+Text_2.Name = "Text"
+Text_2.Parent = SettingGui
+Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.BackgroundTransparency = 1.000
+Text_2.Size = UDim2.new(0, 184, 0, 50)
+Text_2.Font = Enum.Font.SourceSans
+Text_2.Text = "Nothing Here Yet"
+Text_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.TextSize = 25.000
+
+Exit_4.Name = "Exit"
+Exit_4.Parent = SettingGui
+Exit_4.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit_4.Position = UDim2.new(0.646739125, 0, 0.835249066, 0)
+Exit_4.Size = UDim2.new(0, 61, 0, 35)
+Exit_4.Font = Enum.Font.SourceSans
+Exit_4.Text = "X"
+Exit_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit_4.TextSize = 39.000
+
+UICorner_15.Parent = Exit_4
+
+UICorner_16.Parent = SettingGui
+
+OtherGui.Name = "OtherGui"
+OtherGui.Parent = ScreenGui
+OtherGui.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+OtherGui.BackgroundTransparency = 0.100
+OtherGui.Position = UDim2.new(0.613586545, 0, 0.237330034, 0)
+OtherGui.Size = UDim2.new(0, 397, 0, 425)
+OtherGui.Visible = false
+
+Title_3.Name = "Title"
+Title_3.Parent = OtherGui
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.Position = UDim2.new(0.257317871, 0, 0, 0)
+Title_3.Size = UDim2.new(0, 200, 0, 50)
+Title_3.Font = Enum.Font.Arcade
+Title_3.Text = "Wets GUI"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 35.000
+
+UICorner_17.Parent = OtherGui
+
+Info_2.Name = "{Info}"
+Info_2.Parent = OtherGui
+Info_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info_2.BackgroundTransparency = 1.000
+Info_2.Position = UDim2.new(0.247242302, 0, 0.882352948, 0)
+Info_2.Size = UDim2.new(0, 200, 0, 50)
+Info_2.Font = Enum.Font.Arcade
+Info_2.Text = "More Updates Soon!"
+Info_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info_2.TextSize = 35.000
+
+Target.Name = "Target"
+Target.Parent = OtherGui
+Target.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Target.BackgroundTransparency = 1.000
+Target.Position = UDim2.new(0.247242302, 0, 0.0917647108, 0)
+Target.Size = UDim2.new(0, 200, 0, 50)
+Target.Font = Enum.Font.Arcade
+Target.Text = "Target"
+Target.TextColor3 = Color3.fromRGB(255, 255, 255)
+Target.TextSize = 35.000
+
+Soon.Name = "Soon!"
+Soon.Parent = OtherGui
+Soon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Soon.BackgroundTransparency = 1.000
+Soon.Position = UDim2.new(0.247242302, 0, 0.411764741, 0)
+Soon.Size = UDim2.new(0, 200, 0, 50)
+Soon.Font = Enum.Font.Arcade
+Soon.Text = "SOON!"
+Soon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon.TextSize = 35.000
+
+-- Scripts:
+
+local function UPZR_fake_script() -- Main.Script 
+	local script = Instance.new('Script', Main)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		script.Parent.Parent.Visible = true
+		script.Parent.Parent.Parent.MainMenu.Visible = true
+	end)
+end
+coroutine.wrap(UPZR_fake_script)()
+local function OMGB_fake_script() -- Misc.Script 
+	local script = Instance.new('Script', Misc)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		script.Parent.Parent.Visible = true
+		script.Parent.Parent.Parent.MiscGui.Visible = true
+	end)
+end
+coroutine.wrap(OMGB_fake_script)()
+-- Other.Script is disabled.
+local function SLSNMK_fake_script() -- Settings.Script 
+	local script = Instance.new('Script', Settings)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		script.Parent.Parent.Visible = true
+		script.Parent.Parent.Parent.SettingGui.Visible = true
+	end)
+end
+coroutine.wrap(SLSNMK_fake_script)()
+local function RDZPLDC_fake_script() -- Exit.Script 
+	local script = Instance.new('Script', Exit)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(RDZPLDC_fake_script)()
+local function IEIA_fake_script() -- WalkSpeed.Script 
+	local script = Instance.new('Script', WalkSpeed)
+
+	
+end
+coroutine.wrap(IEIA_fake_script)()
+local function TINVH_fake_script() -- Exit_2.Script 
+	local script = Instance.new('Script', Exit_2)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(TINVH_fake_script)()
+local function XWKRG_fake_script() -- Exit_3.Script 
+	local script = Instance.new('Script', Exit_3)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(XWKRG_fake_script)()
+local function RDEDNN_fake_script() -- Exit_4.Script 
+	local script = Instance.new('Script', Exit_4)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(RDEDNN_fake_script)()
